@@ -1,0 +1,665 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "aside navbar navbar navbar"
+                         "aside title title title"
+                         "aside topArtis topArtis player"
+                         "aside genres topChart player"
+                         "aside genres topChart playerMedia"
+                         "aside footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr 3fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr 2fr 4fr;
+}
+
+
+
+
+.bar{
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    grid-area: navbar;
+    z-index: 10;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.nav-scrolled {
+    background-color: #000000; /* New background color when scrolled */
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    padding-left: 60px;
+}
+
+.navbar-list li {
+    margin-top: 10px;
+    margin-right: auto;
+    /* padding-left: px; */
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-list a:hover {
+    color: #3F53B7;
+    transition: color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #3F53B7;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.search-bar {
+    margin-left: 90px;
+}
+
+.search-bar input {
+    background-color: #1D1D1D;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    align-items: center;
+    color: white;
+}
+
+.login-button {
+    /* margin-top: 5px; */
+    margin-right: 20px;
+}
+  
+.login-button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.navbar-brand img{
+    width: 50%;
+    margin-right: auto;
+}
+
+.dropbtn img{
+    width: 15%;
+    float: right;
+    margin-top: -5%;
+}
+
+.navbar-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.logonav img {
+    width: 50%;
+    height: auto;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    /* transform: translateY(-100%); */
+    transition: transform 1s ease-in-out;
+}
+
+.dropdown-menu.show {
+    display: block;
+    transform: translateY(0);
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #575757;
+}
+/* Show dropdown content */
+.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #3F53B7;
+}
+
+
+.aside{
+    background-color: #18181D;
+    grid-area: aside;
+}
+
+.logo{
+    padding: 25px;
+}
+
+.side-nav-links {
+    list-style: none;
+    padding: 20px;
+}
+
+.side-nav-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.side-nav-links .image-with-text :hover {
+    color: #3F53B7;
+    transition: color 0.3s ease;
+}
+
+.side-menu{
+    font-size: 16;
+    padding-bottom: 30px;
+}
+
+.image-with-text {
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.title{
+    margin-top: 20px;
+    grid-area: title;
+}
+
+.judul{
+    padding-left: 40px;
+    float: left;
+}
+
+.trending{
+    font-size: 32px;
+    margin: 0;
+}
+
+.song-name{
+    font-size: 96px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.artist-song{
+    font-size: 36px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.many-plays{
+    padding-left: 48px;
+    font-size: 32px;
+    font-weight: 200;
+    font-weight: 100;
+}
+
+.gambar{
+    float: right;
+    margin-top: -90px;
+    display: flex;
+}
+
+.Button-trending{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.bn62 {
+    color: white;
+    background-color: #5773FF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.topArtist{
+    background-color: #202026;
+    grid-area: topArtis;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 10;
+    margin-left: 20px;
+}
+
+.list {
+    margin: 50px auto;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.list span img{
+    width: 90%;
+    border-radius: 8px;
+}
+
+.artist {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.artist span {
+    margin: auto 4%;
+    display: inline-block;
+    text-align: center;
+}
+
+.artist span img {
+    display: block;
+    margin: 0 auto;
+}
+
+.artist span p {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.genres{
+    background-color: #202026;
+    grid-area: genres;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.genres_list{
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres1{
+    width: 123px;
+    height: 68px;
+    background-color: #476A8A;
+    border-radius: 8px;
+}
+.genres2{
+    width: 124px;
+    height: 68px;
+    background-color: #A69984;
+    border-radius: 8px;
+}
+.genres3{
+    width: 156px;
+    height: 68px;
+    background-color: #A24C34;
+    border-radius: 8px;
+}
+.genres4{
+    width: 91px;
+    height: 68px;
+    background-color: #0D4045;
+    border-radius: 8px;
+}
+.genres5{
+    width: 91px;
+    height: 68px;
+    background-color: #A67894;
+    border-radius: 8px;
+}
+.genres6{
+    width: 91px;
+    height: 68px;
+    background-color: #5547A5;
+    border-radius: 8px;
+}
+
+
+.genres_list > div {
+    flex: 1 1 40%; /* 50% width for each column */
+    max-width: 50%; /* 50% max width for each column */
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin: 10px;
+}
+
+/* Optional: Adjust styling for better presentation */
+.genres_list > div span {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.topchart{
+    background-color: #202026;
+    padding: 20px;
+    border-radius: 8px;
+    grid-area: topChart;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.topChartsList {
+    margin-top: 7%;
+    display: block;
+}
+
+.charts {
+    display: flex;
+    align-items: center; 
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+
+.imgCover img {
+    width: 70px;
+}
+
+.no {
+    width: 40px; /* Sesuaikan lebar container jika perlu */
+    height: 40px; /* Sesuaikan tinggi container jika perlu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%;
+}
+
+.judulLagu {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .nama{
+    text-align: center;
+} */
+
+
+.judulLagu .artis {
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+table.wrap-content-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allows columns to adjust to the content */
+}
+
+.wrap-content-table tr, .wrap-content-table td{
+    padding: 8px;
+}
+
+.player{
+    border-radius: 8px 8px 0 0;
+    background-color: #202026;
+    grid-area: player;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #5773ff;
+    transition: width 0.1s;
+}
+
+
+.image img{
+    width: 150px;
+}
+
+
+.mediaPlayerTitle span{
+    font-size: 24px;
+}
+
+.nama_lagu{
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 5%;
+}
+
+.penyanyi{
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.top{
+    font-size: 12px;
+    margin-top: 2%;
+}
+
+.buttomPlayer {
+    display: flex;
+    grid-area: playerMedia;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+    background-color: #5773ff;
+    padding: 20px;
+    align-items: center; /* Mengatur item agar sejajar secara vertikal */
+}
+
+.buttomPlayer span {
+    margin: 0 20px; /* Memberikan ruang antara setiap tombol */
+}
+
+.footer{
+    background-color: transparent;
+    color: #fff;
+    grid-area: footer;
+    padding: 50px 0;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.slogan-img img{
+    width: 120%;
+}
+
+.slogan span{
+    margin-top: 1%;
+    font-size: 24px;
+}
+
+.aplikasi{
+    display: flex;
+    margin: 0 20px;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur agar konten di tengah secara horizontal */
+    margin-top: 5%;
+}
+
+.aplikasi img{
+    width: 30px;
+}
+
+.aplikasi span{
+    font-size: 20px;
+    text-align: center;
+    display: flex; /* Menambahkan display flex */
+    align-items: center; /* Menengahkan secara vertikal */
+    margin-left: 10%;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur agar konten di tengah secara horizontal */
+    margin-top: 2%;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "navbar"
+            "title"
+            "topArtis"
+            "genres"
+            "topChart"
+            "player"
+            "playerMedia"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .topArtist, .genres, .topchart, .footer{
+        margin: 20px;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: flex;
+    }
+
+    .gambar img{
+        display: none;
+    }
+
+    .song-name {
+        font-size: 80px;
+        padding-left: 0;
+        margin: 0;
+      }
+
+    .artist-song {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .many-plays{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .bn62{
+        margin-left: -20px;
+    }
+
+    .player{
+        margin-top: 20px;
+    }
+
+    .slogan span{
+        font-size: 16px;
+        text-align: center;
+    }
+}

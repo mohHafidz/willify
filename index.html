@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="audioPlayer"></audio>    
+    <div class="container">
+        <div class="bar">
+            <nav class="navbar" id="navbar">
+                <ul class="navbar-list">
+                    <li><a href="songlist.html">MUSIC</a></li>
+                    <li><a href="http://">PODCAST</a></li>
+                    <li><a href="http://">LIVE</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Type here to search">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-button">
+                            <a href="./register.html" class="regis">REGIS</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <header class="navbar-mobile">
+                <div class="logonav">
+                    <a href="index.html">
+                        <img src="assets/Group 3.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    &#9776;
+                </div>
+                <nav class="dropdown-menu" id="dropdown-menu">
+                    <ul>
+                        <li><a href="songlist.html">Music</a></li>
+                        <li><a href="#podcast">Podcast</a></li>
+                        <li><a href="#live">Live</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="register.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="aside">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/Group 3.png" alt="">
+                </a>
+            </div>
+            <ul class="side-nav-links">
+                <li class="side-menu">MENU</li>
+                <li class="image-with-text"><a href="#"><img src="assets/Explore.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Explore</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Genres.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Genres</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Albums.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Albums</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Artist.png" alt="" style="margin-right: 25px; vertical-align: middle;"><span>Artist</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Radio.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Radio</span></a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <div class="judul">
+                <p class="trending">Trending New Hits</p>
+                <h1 class="song-name">In My Feelings</h1>
+                <div style="display: block;">
+                    <span class="artist-song">Camila cabelo</span>
+                    <span class="many-plays">63Million Plays</span>
+                </div>
+                <div style="display: block;" class="Button-trending">
+                    <a href="/buttons/62" class="bn62">
+                        Listen Now
+                    </a>
+                </div>
+            </div>
+            <div class="gambar">
+                <img src="assets/nude-woman-portrait-skincare-concept-removebg-preview 1.png" alt="">
+            </div>
+        </div>
+        <div class="topArtist">
+            <div class="title">
+                <span>Top Artists</span>
+                <a href="">
+                    <span style="float: right;text-decoration: none; color: white;" >See all</span>
+                </a>
+            </div>
+            <div class="artist">
+                <div class="list">
+                    <span>
+                        <img src="assets/4.png" alt="">
+                        <p>Taylor Swift</p>
+                    </span>
+                    <span>
+                        <img src="assets/1.png" alt="">
+                        <p>niki</p>
+                    </span>
+                    <span>
+                        <img src="assets/5.png" alt="">
+                        <p>the weeknd</p>
+                    </span>
+                    <span>
+                        <img src="assets/3.png" alt="">
+                        <p>katy perry</p>
+                    </span>
+                    <span>
+                        <img src="assets/6.png" alt="">
+                        <p>tiara andini</p>
+                    </span>
+                    <span>
+                        <img src="assets/2.png" alt="">
+                        <p>Justin Bieber</p>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="genres">
+            <div class="title_genre">
+                <span>Genres</span>
+                <a href="">
+                    <span style="float: right; text-decoration: none; color: white;">See all</span>
+                </a>
+            </div>
+            <div class="genres_list">
+                <div class="genres1">
+                    <span>Dance<br>Beat</span>
+                </div>
+                <div class="genres2">
+                    <span>Electro<br>Pop</span>
+                </div>
+                <div class="genres3">
+                    <span>Alternative<br>Indie</span>
+                </div>
+                <div class="genres4">
+                    <span>Hip<br>Hop</span>
+                </div>
+                <div class="genres5">
+                    <span>Classical<br>Period</span>
+                </div>
+                <div class="genres6">
+                    <span>Hip Hop<br>Rap</span>
+                </div>
+            </div>
+        </div>
+        <div class="topchart">
+            <div class="chartTitle">
+                <span>Top Charts</span>
+                <a href="songList.html">
+                    <span style="float: right; text-decoration: none; color: white;">See all</span>
+                </a>
+            </div>
+            <div class="topChartsList" >
+                <table class="wrap-content-table">
+                    <tbody id="topChartsList">
+                        <tr>
+                            <td>0${i + 1}</td>
+                            <td><div class="imgCover"><img src="${song.image}" alt=""></div></td>
+                            <td><div class="judulLagu"><span class="nama">${song.title}</span><span class="artis">${song.artist}</span></div></td>
+                            <td><div class="player"><span>${song.duration}</span></div></td>
+                        </tr>
+                        <tr>
+                            <td>0${i + 1}</td>
+                            <td><div class="imgCover"><img src="${song.image}" alt=""></div></td>
+                            <td><div class="judulLagu"><span class="nama">${song.title}</span><span class="artis">${song.artist}</span></div></td>
+                            <td><div class="player"><span>${song.duration}</span></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <!-- <div class="charts">
+                    <div class="no">
+                        <span>01</span>
+                    </div>
+                    <div class="imgCover">
+                        <img src="./assets/Taylor.png" alt="">
+                    </div>
+                    <div class="judulLagu">
+                        <span class="nama">Havana</span>
+                        <span class="artis">Camila Cabelo</span>
+                    </div>
+                    <div class="player">
+                        <span>3:45</span>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="no">
+                        <span>02</span>
+                    </div>
+                    <div class="imgCover">
+                        <img src="./assets/Rectangle 48.png" alt="">
+                    </div>
+                    <div class="judulLagu">
+                        <span class="nama">Havana</span>
+                        <span class="artis">Camila Cabelo</span>
+                    </div>
+                    <div class="player">
+                        <span>3:45</span>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="no">
+                        <span>03</span>
+                    </div>
+                    <div class="imgCover">
+                        <img src="./assets/Rectangle 53.png" alt="">
+                    </div>
+                    <div class="judulLagu">
+                        <span class="nama">Havana</span>
+                        <span class="artis">Camila Cabelo</span>
+                    </div>
+                    <div class="player">
+                        <span>3:45</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="player">
+            <div class="mediaPlayerTitle">
+                <span>Player</span>
+                <span><img src="./assets/player.png" alt="" style="float: right;"></span>
+            </div>
+            <div class="media">
+                <div class="image" >
+                    <img src="./assets/profileIcon_snoo1af6e33d-13bd-47aa-a383-9d0a1f2b617a-headshot 1.png" alt="" id="songImage" style="border-radius: 8px;">
+                </div>
+                <div class="nama_lagu">Butterfly Effect</div>
+                <div class="penyanyi">
+                    Travis Scott
+                </div>
+                <div class="top">Best of 2020</div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttomPlayer">
+            <span><img src="./assets/Vector.png" alt=""></span>
+            <span id="prevBtn"><img src="./assets/prev.png" alt=""></span>
+            <span id="playPauseBtn"><img src="./assets/play button.png" alt=""></span>
+            <span id="nextBtn"><img src="./assets/next.png" alt=""></span>
+            <span><img src="./assets/shuffle.png" alt=""></span>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="slogan">
+                    <div class="slogan-img">
+                        <img src="./assets/Group 3.png" alt="">
+                    </div>
+                    <span>"Experience the World's Music with Willify: Where Every Beat Finds You!"</span>
+                </div>
+                <div class="sosmed">
+                    <div class="aplikasi instagram">
+                        <div class="sosmed-img">
+                            <img src="./assets/instagram.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                    <div class="aplikasi facebook">
+                        <div class="sosmed-img">
+                            <img src="./assets/x.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                    <div class="aplikasi x">
+                        <div class="sosmed-img">
+                            <img src="./assets/facebook.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Willify. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="dataset.js"></script>
+<script>
+    const audioPlayer = document.getElementById("audioPlayer");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+    const progressBar = document.getElementById("progressBar");
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const numberOfSongs = musicDataset.length;
+        let songHistory = [];
+        let currentSongIndex = -1;
+        let playedSongs = new Set(); // Set to keep track of played songs
+
+        function getRandomSong() {
+            if (playedSongs.size >= numberOfSongs) {
+                playedSongs.clear(); // Clear the set if all songs have been played
+            }
+
+            let randomIndex;
+            let randomSong;
+
+            do {
+                randomIndex = Math.floor(Math.random() * numberOfSongs);
+                randomSong = musicDataset[randomIndex];
+            } while (playedSongs.has(randomSong.filename));
+
+            return randomSong;
+        }
+
+        function updatePlayerInfo(song) {
+            document.querySelector(".nama_lagu").textContent = song.title;
+            document.querySelector(".penyanyi").textContent = song.artist;
+            document.getElementById("songImage").src = song.image;
+        }
+
+        function playSong(song) {
+            audioPlayer.src = song.filename;  // Assumes the audio file path is stored in 'filename'
+            audioPlayer.play().then(() => {
+                console.log(`Playing: ${song.title} by ${song.artist}`);
+                updatePlayerInfo(song);
+                playedSongs.add(song.filename); // Add song to played songs set
+            }).catch(error => {
+                console.error('Error playing audio:', error);
+            });
+        }
+
+        function playRandomSong() {
+            const randomSong = getRandomSong();
+            songHistory.push(randomSong);
+            currentSongIndex = songHistory.length - 1;
+            playSong(randomSong);
+        }
+
+        function playPreviousSong() {
+            if (currentSongIndex > 0) {
+                currentSongIndex--;
+                const previousSong = songHistory[currentSongIndex];
+                playSong(previousSong);
+            } else {
+                console.log("No previous song available");
+            }
+        }
+
+        // Get a random song and update the player info when the page loads
+        const initialSong = getRandomSong();
+        songHistory.push(initialSong);
+        currentSongIndex = 0;
+        updatePlayerInfo(initialSong);
+        audioPlayer.src = initialSong.filename;  // Assumes the audio file path is stored in 'filename'
+
+        playPauseBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent any default action, like a form submission or anchor navigation
+            togglePlayPause();
+        });
+
+        nextBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent any default action, like a form submission or anchor navigation
+            playRandomSong();
+        });
+
+        prevBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent any default action, like a form submission or anchor navigation
+            playPreviousSong();
+        });
+
+        audioPlayer.addEventListener('ended', playRandomSong);
+        
+        // Update the progress bar as the song plays
+        audioPlayer.addEventListener('timeupdate', updateProgressBar);
+
+        function updateProgressBar() {
+            const { currentTime, duration } = audioPlayer;
+            const percent = (currentTime / duration) * 100;
+            progressBar.style.width = `${percent}%`;
+        }
+
+        // Populate the table with data from the dataset
+        function populateTable() {
+            const topChartsList = document.getElementById("topChartsList");
+            let rows = "";
+
+            for (let i = 0; i < 3; i++) {  // Change this number to the number of rows you want to display
+                const song = musicDataset[i];
+                rows += `
+                    <tr class="song-row" data-song-id="${i+1}">
+                        <td>0${i + 1}</td>
+                        <td><div class="imgCover"><img src="${song.image}" alt=""></div></td>
+                        <td><div class="judulLagu"><span class="nama">${song.title}</span><span class="artis">${song.artist}</span></div></td>
+                        <td><div class="player"><span>${song.duration}</span></div></td>
+                    </tr>
+                `;
+            }
+
+            topChartsList.innerHTML = rows;
+
+            // Add event listeners to the rows
+            document.querySelectorAll('.song-row').forEach(row => {
+                row.addEventListener('click', function() {
+                    const songId = this.dataset.songId;
+                    console.log(songId)
+                    window.location.href = `songdetail.html?songId=${songId}`;
+                });
+            });
+        }
+
+        populateTable();
+    });
+
+    function togglePlayPause() {
+        const playPauseImg = playPauseBtn.querySelector('img');
+        if (audioPlayer.paused || audioPlayer.ended) {
+            audioPlayer.play();
+            playPauseImg.src = 'assets/pause.png';  // Change to pause icon
+        } else {
+            audioPlayer.pause();
+            playPauseImg.src = 'assets/play button.png';  // Change to play icon
+        }
+    }
+
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        var menu = document.getElementById('dropdown-menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
+</script>
+
+</html>

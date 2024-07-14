@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="songdetail.css">
+    <title>Song Detail</title>
+</head>
+<body>
+    <audio id="audioPlayer"></audio>
+    <div class="container">
+        <div class="navbar">
+            <nav class="navbar" id="navbar">
+                <ul class="navbar-list">
+                    <li><a href="songlist.html">MUSIC</a></li>
+                    <li><a href="http://">PODCAST</a></li>
+                    <li><a href="http://">LIVE</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Type here to search">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-button">
+                            <a href="./register.html" class="regis">REGIS</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-mobile">
+                <div class="navbarMobile">
+                    <div class="navbar-container">
+                        <div class="navbar-brand">
+                            <img src="assets/Group 3.png" alt="">
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="toggleDropdown()">
+                                <img src="assets/humberger.png" alt="">
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="songlist.html">MUSIC</a>
+                                <a href="#">PODCAST</a>
+                                <a href="#">LIVE</a>
+                                <a href="about.html">About Us</a>
+                                <a href="#">
+                                    <div class="search-bar">
+                                        <input type="text" placeholder="Type here to search">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/Group 3.png" alt="">
+                </a>
+            </div>
+            <ul class="side-nav-links">
+                <li class="side-menu">MENU</li>
+                <li class="image-with-text"><a href="#"><img src="assets/Explore.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Explore</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Genres.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Genres</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Albums.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Albums</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Artist.png" alt="" style="margin-right: 25px; vertical-align: middle;"><span>Artist</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Radio.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Radio</span></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="exit">
+                <img src="assets/cross.png" alt="">
+            </div>
+            <div class="banner">
+                <img id="songImage" src="" alt="">
+            </div>
+            <div class="judul">
+                <h1 id="songTitle"></h1>
+            </div>
+            <div class="player">
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+            <div class="shuffle">
+                <img src="assets/shuffle.png" alt="">
+            </div>
+            <div class="prev">
+                <img src="assets/prev.png" alt="">
+            </div>
+            <div class="pause" id="playPauseBtn" onclick="togglePlayPause()">
+                <img src="assets/play button.png" alt="">
+            </div>
+            <div class="next">
+                <img src="assets/next.png" alt="">
+            </div>
+            <div class="loop" id="loopBtn">
+                <img src="assets/Vector.png"  alt="">
+            </div>
+            <div class="lirik">
+                <p id="lyricsContainer"></p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="slogan">
+                    <div class="slogan-img">
+                        <img src="./assets/Group 3.png" alt="">
+                    </div>
+                    <span>"Experience the World's Music with Willify: Where Every Beat Finds You!"</span>
+                </div>
+                <div class="sosmed">
+                    <div class="aplikasi instagram">
+                        <div class="sosmed-img">
+                            <img src="./assets/instagram.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                    <div class="aplikasi facebook">
+                        <div class="sosmed-img">
+                            <img src="./assets/x.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                    <div class="aplikasi x">
+                        <div class="sosmed-img">
+                            <img src="./assets/facebook.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Willify. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dataset.js"></script>
+    <script src="songdetail.js">
+        
+    </script>
+</body>
+</html>

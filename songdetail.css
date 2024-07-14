@@ -1,0 +1,452 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "aside nav"
+                         "aside main"
+                         "aside footer";
+    grid-template-columns: .244fr auto;
+    grid-template-rows: 1fr auto;
+}
+
+.navbar{
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    grid-area: nav;
+    z-index: 10;
+}
+
+
+.navbar-mobile{
+    display: none;
+}
+
+.nav-scrolled {
+    background-color: #000000; /* New background color when scrolled */
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    padding-left: 60px;
+}
+
+.navbar-list li {
+    margin-top: 10px;
+    margin-right: auto;
+    /* padding-left: px; */
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-list a:hover {
+    color: #3F53B7;
+    transition: color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #3F53B7;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.search-bar {
+    margin-left: 90px;
+}
+
+.search-bar input {
+    background-color: #1D1D1D;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    align-items: center;
+    color: white;
+}
+
+.login-button {
+    /* margin-top: 5px; */
+    margin-right: 20px;
+}
+  
+.login-button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.navbar-brand img{
+    width: 50%;
+    margin-right: auto;
+}
+
+.dropbtn img{
+    width: 15%;
+    float: right;
+    margin-top: -5%;
+}
+
+/* Navbar Styles */
+.navbarMobile {
+    background-color: #000000; /* Navbar background color */
+    color: #FFFFFF;
+    padding: 10px 20px; /* Navbar padding */
+    display: flex;
+    justify-content: flex-end; /* Menggeser isi navbar ke kanan */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    margin-right: auto; /* Menggeser logo ke kiri */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; /* Memberikan ruang di antara logo dan dropdown */
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+}
+
+/* Show dropdown content */
+.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #3F53B7;
+}
+
+
+.aside{
+    background-color: #18181D;
+    grid-area: aside;
+}
+
+.logo{
+    padding: 25px;
+}
+
+.side-nav-links {
+    list-style: none;
+    padding: 20px;
+}
+
+.side-nav-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.side-nav-links .image-with-text :hover {
+    color: #3F53B7;
+    transition: color 0.3s ease;
+}
+
+.side-menu{
+    font-size: 16;
+    padding-bottom: 30px;
+}
+
+.image-with-text {
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+} 
+
+.content {
+    grid-area: main;
+    margin: 0 40px;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas: 
+        "exit banner banner banner banner banner"
+        "exit judul judul judul judul judul"
+        "exit player player player player player"
+        "exit shuffle prev pause next loop"
+        "exit lirik lirik lirik lirik lirik";
+}
+
+.exit{
+    grid-area: exit;
+}
+
+.exit img{
+    width: 20px;
+}
+
+.banner {
+    grid-area: banner;
+    display: flex; /* Menggunakan flexbox untuk penyelarasan dalam */
+    justify-content: center; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: center; /* Menyelaraskan item secara vertikal */
+}
+
+.banner img {
+    width: 25%;
+    border-radius: 10%;
+}
+
+.judul{
+    margin: 0 10%;
+    grid-area: judul;
+}
+
+.player{
+    grid-area: player;
+    display: flex;
+    justify-content: center; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: center;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+    height: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 1% 10%;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #76c7c0;
+    border-radius: 10px;
+    width: 0;
+}
+
+.player-controls {
+    margin-top: 20px;
+}
+
+.player-controls button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.shuffle{
+    grid-area: shuffle;
+    display: flex;
+    justify-content: end; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: end;
+    margin-right: 45%;
+    margin-top: 10%;
+}
+
+.prev{
+    grid-area: prev;
+    display: flex;
+    justify-content: end; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: end;
+    margin-right: 45%;
+    margin-top: 10%;
+}
+
+.pause{
+    grid-area: pause;
+    display: flex;
+    justify-content: end; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: end;
+    margin-right: 45%;
+    margin-top: 10%;
+}
+
+.next{
+    grid-area: next;
+    display: flex;
+    justify-content: end; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: end;
+    margin-right: 45%;
+    margin-top: 10%;
+}
+
+.loop{
+    grid-area: loop;
+    display: flex;
+    justify-content: end; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    text-align: end;
+    margin-right: 45%;
+    margin-top: 10%;
+}
+
+.lirik {
+    grid-area: lirik;
+    width: 94%;
+    border-radius: 8px;
+    background-color: #25252D;
+    display: flex; /* Menggunakan flexbox untuk penyelarasan dalam */
+    justify-content: center; /* Menyelaraskan item secara horizontal */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 20px;
+    place-self: center;
+    margin-top: 3%;
+    overflow-y: auto;
+}
+
+.lirik p{
+    width: 100%;
+    font-size: 32px;
+    line-height: 1fr;
+    margin: 0;
+}
+
+.footer{
+    background-color: transparent;
+    color: #fff;
+    grid-area: footer;
+    padding: 50px 0;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.slogan-img img{
+    width: 120%;
+}
+
+.slogan span{
+    margin-top: 1%;
+    font-size: 24px;
+}
+
+.aplikasi{
+    display: flex;
+    margin: 0 20px;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur agar konten di tengah secara horizontal */
+    margin-top: 5%;
+}
+
+.aplikasi img{
+    width: 30px;
+}
+
+.aplikasi span{
+    font-size: 20px;
+    text-align: center;
+    display: flex; /* Menambahkan display flex */
+    align-items: center; /* Menengahkan secara vertikal */
+    margin-left: 10%;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur agar konten di tengah secara horizontal */
+    margin-top: 2%;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+                         " main"
+                         " footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: flex;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    .lirik p{
+        font-size: 20px;
+    }
+
+    .shuffle, .prev, .pause, .next, .loop, img{
+        width: 70%;
+    }
+
+    .banner img {
+        width: 30%;
+    }
+
+    .slogan span{
+        font-size: 16px;
+        text-align: center;
+    }
+}

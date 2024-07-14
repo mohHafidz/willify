@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav class="navbar" id="navbar">
+                <ul class="navbar-list">
+                    <li><a href="songlist.html">MUSIC</a></li>
+                    <li><a href="http://">PODCAST</a></li>
+                    <li><a href="http://">LIVE</a></li>
+                    <li><a href="" style="color: #3F53B7;">About Us</a></li>
+                    <li>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Type here to search">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-button">
+                            <a href="./register.html" class="regis">REGIS</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <header class="navbar-mobile">
+                <div class="logonav">
+                    <a href="index.html">
+                        <img src="assets/Group 3.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    &#9776;
+                </div>
+                <nav class="dropdown-menu" id="dropdown-menu">
+                    <ul>
+                        <li><a href="songlist.html">Music</a></li>
+                        <li><a href="#podcast">Podcast</a></li>
+                        <li><a href="#live">Live</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="register.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/Group 3.png" alt="">
+                </a>
+            </div>
+            <ul class="side-nav-links">
+                <li class="side-menu">MENU</li>
+                <li class="image-with-text"><a href="#"><img src="assets/Explore.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Explore</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Genres.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Genres</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Albums.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Albums</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Artist.png" alt="" style="margin-right: 25px; vertical-align: middle;"><span>Artist</span></a></li>
+                <li class="image-with-text"><a href="#"><img src="assets/Radio.png" alt="" style="margin-right: 20px; vertical-align: middle;"><span>Radio</span></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="about">
+                <div class="about-container">
+                    <div class="about-us">
+                        <h3><a href="" style="text-decoration: none; color: white;">About Us</a></h3>
+                        <p>
+                            Willify is a renowned music streaming platform that made its debut in 2006. Originating as a digital audio service, Willify quickly gained prominence and has become a household name in the world of music. Starting with a vision to revolutionize how people consume music, Willify has grown into a global phenomenon with millions of active users.
+                        </p>
+                        <p>
+                            The platform is celebrated for its vast and diverse music library, offering users access to an extensive catalog spanning various genres, artists, and podcasts. A distinctive feature of Willify is its personalized approach, leveraging algorithms to curate playlists and recommendations tailored to individual tastes.
+                        </p>
+                        <p>
+                            What sets Willify apart is its commitment to delivering a seamless and enjoyable music experience. The platform consistently incorporates cutting-edge streaming technology, ensuring high-quality audio for users, whether they are discovering new tracks or enjoying their favorite classics.
+                        </p>
+                        <p>
+                            With a global audience in mind, Willify has become a staple for music enthusiasts worldwide. Its user-friendly interface, regular updates, and innovative features have contributed to its widespread success. Spotify serves as a hub for music discovery, social sharing, and community engagement, connecting users across geographical boundaries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="slogan">
+                    <div class="slogan-img">
+                        <img src="./assets/Group 3.png" alt="">
+                    </div>
+                    <span>"Experience the World's Music with Willify: Where Every Beat Finds You!"</span>
+                </div>
+                <div class="sosmed">
+                    <div class="aplikasi instagram">
+                        <div class="sosmed-img">
+                            <img src="./assets/instagram.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                    <div class="aplikasi facebook">
+                        <div class="sosmed-img">
+                            <img src="./assets/x.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                    <div class="aplikasi x">
+                        <div class="sosmed-img">
+                            <img src="./assets/facebook.png" alt="">
+                        </div>
+                        <span>Willify</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Willify. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        var menu = document.getElementById('dropdown-menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,274 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "main banner";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .1fr;
+    margin: 10%;
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "back logo logo"
+                         "back username username"
+                         "back email email"
+                         "back password password"
+                         "back age gender"
+                         /* "back alert alert" */
+                         "back regisBTN regisBTN";
+    grid-template-columns: .2fr .5fr .5fr;
+    grid-template-rows: .2fr .1fr .1fr .1fr auto;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    padding: 5%;
+}
+
+.backBTN{
+    grid-area: back;
+}
+
+.backBTN img{
+    width: 30px;
+}
+
+.banner{
+    grid-area: banner;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.logo{
+    grid-area: logo;
+    margin: auto;
+    margin-bottom: 10%;
+    
+}
+
+.logo img{
+    width: 200px;
+}
+
+
+.username{
+    margin: auto;
+    grid-area: username;
+    margin-bottom: 4%;
+}
+
+.email{
+    margin: auto;
+    grid-area: email;
+    margin-bottom: 4%;
+}
+
+.password{
+    margin: auto;
+    grid-area: password;
+    margin-bottom: 4%;
+}
+
+
+.form-input input {
+    background-color: transparent;
+    padding: 5%;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+    padding: 8px; /* Add padding as needed */
+}
+
+.form-input img{
+    width: 100%;
+    padding-left: 8px;
+}
+
+
+.form-input{
+    display: flex;
+    background-color: #1D1D1D;
+    border: none;
+    border-radius: 14px;
+    width: 100%;
+}
+
+.input{
+    width: 80%;
+}
+
+.age{
+    display: flex;
+    grid-area: age;
+    justify-content: end;
+    margin-right: 2.5%;
+    margin-bottom: 10%;
+}
+
+.Age input{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    width: 90%;
+    height: 50px;
+}
+
+.BTNAge{
+    width: 79.8%;
+    height: 69px;
+    background-color: #18181D;
+    border-radius: 14px;
+}
+
+.gender{
+    margin-left: 2.5%;
+    grid-area: gender;
+    text-align: start;
+    justify-content: center;
+    
+}
+
+.BTNGender{
+    width: 79.8%;
+    height: 69px;
+    background-color: #18181D;
+    border-radius: 14px;
+}
+
+.gender-dropdown {
+    text-align: center;
+    line-height: 69px;
+    width: 100%;
+    /* height: 40px; */
+    background-color:transparent;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    appearance: none; /* Removes default arrow in some browsers */
+    -webkit-appearance: none; /* Removes default arrow in Safari */
+}
+
+.gender-dropdown::placeholder {
+    color: #18181D;
+}
+
+.gender-dropdown option {
+    background-color: #18181D;
+    color: white;
+}
+
+.regisBTN {
+    margin: auto;
+    display: flex;
+    grid-area: regisBTN;
+    justify-content: center;
+    width: 50%;
+}
+
+.regisBTN a{
+    width: 50%;
+}
+
+.bn632-hover {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
+  @media (max-width: 768px) {
+
+    body{
+        height: 100vh;
+    }
+
+    .container{
+        display: grid;
+        grid-template-areas: "main";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        margin: auto;
+        margin-top: 20%;
+    }
+
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "back logo logo"
+                             "username username username"
+                             "email email email"
+                             "password password password"
+                             "age gender"
+                             "regisBTN regisBTN";
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .backBTN a img{
+        width: 50%;
+    }
+
+    .logo img{
+        width: 70%;
+    }
+
+    .logo{
+        margin-top: 30%;
+    }
+
+  }

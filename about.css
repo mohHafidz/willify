@@ -1,0 +1,342 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "aside nav"
+                         "aside content"
+                         "aside footer";
+    grid-template-columns: .142fr 1fr;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    margin-bottom: 10%;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.nav-scrolled {
+    background-color: #000000; /* New background color when scrolled */
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    padding-left: 60px;
+}
+
+.navbar-list li {
+    margin-top: 10px;
+    margin-right: auto;
+    /* padding-left: px; */
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-list a:hover {
+    color: #3F53B7;
+    transition: color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #3F53B7;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.search-bar {
+    margin-left: 90px;
+}
+
+.search-bar input {
+    background-color: #1D1D1D;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    align-items: center;
+    color: white;
+}
+
+.login-button {
+    /* margin-top: 5px; */
+    margin-right: 20px;
+}
+  
+.login-button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.navbar-brand img{
+    width: 50%;
+    margin-right: auto;
+}
+
+.dropbtn img{
+    width: 15%;
+    float: right;
+    margin-top: -5%;
+}
+
+/* Navbar Styles */
+.navbarMobile {
+    background-color: #000000; /* Navbar background color */
+    color: #FFFFFF;
+    padding: 10px 20px; /* Navbar padding */
+    display: flex;
+    justify-content: flex-end; /* Menggeser isi navbar ke kanan */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    margin-right: auto; /* Menggeser logo ke kiri */
+}
+
+.navbar-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.logonav img {
+    width: 50%;
+    height: auto;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background: linear-gradient(to bottom, #000000, #18181D);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-menu.show {
+    display: block;
+    transform: translateY(0);
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #575757;
+}
+
+.aside{
+    background-color: #18181D;
+    grid-area: aside;
+    width: 100%;
+}
+
+.logo{
+    padding: 25px;
+}
+
+.side-nav-links {
+    list-style: none;
+    padding: 20px;
+}
+
+.side-nav-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.side-nav-links .image-with-text :hover {
+    color: #3F53B7;
+    transition: color 0.3s ease;
+}
+
+.side-menu{
+    font-size: 16;
+    padding-bottom: 30px;
+}
+
+.image-with-text {
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.content{
+    grid-area: content;
+    background-color: #18181d;
+    color: #fff;
+    padding: 50px 0;
+    width: 87%;
+    bottom: 0;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: transparent;
+    color: #fff;
+    grid-area: footer;
+    padding: 50px 0;
+    margin-top: 10%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.slogan-img img{
+    width: 120%;
+}
+
+.slogan span{
+    margin-top: 1%;
+    font-size: 24px;
+}
+
+.aplikasi{
+    display: flex;
+    margin: 0 20px;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur agar konten di tengah secara horizontal */
+    margin-top: 5%;
+}
+
+.aplikasi img{
+    width: 30px;
+}
+
+.aplikasi span{
+    font-size: 20px;
+    text-align: center;
+    display: flex; /* Menambahkan display flex */
+    align-items: center; /* Menengahkan secara vertikal */
+    margin-left: 10%;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mengatur agar konten di tengah secara horizontal */
+    margin-top: 2%;
+}
+
+
+@media (max-width: 768px) {
+
+    .container{
+        display: grid;
+        grid-template-areas: " nav"
+                             " content"
+                             " footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    .slogan span{
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
